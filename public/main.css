@@ -1,0 +1,250 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 60px 0px #a3a3a3;
+          box-shadow: 0px 0px 60px 0px #a3a3a3;
+  height: 80%;
+  width: 80%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main .rooms {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: -webkit-gradient(linear, left top, right top, from(#0589f7), to(#078af7));
+  background: linear-gradient(to right, #0589f7, #078af7);
+}
+
+.main .rooms span {
+  font-size: 2em;
+  padding-left: 20px;
+  color: #fafdfe;
+}
+
+.main .rooms .room__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.main .rooms .room__list .room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 10px;
+  border-top: 2px solid #1e93f4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fafdfe;
+}
+
+.main .rooms .room__list .room:last-child {
+  border-bottom: 2px solid #1e93f4;
+}
+
+.main .rooms .room__list .room .icon i {
+  font-size: 1.7rem;
+  color: #cc0dbf;
+}
+
+.main .conversation {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.main .conversation .chat {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 20px;
+}
+
+.main .conversation .chat .msg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  width: auto;
+  max-width: 60%;
+  height: 50px auto;
+  border-radius: 5px;
+  background-color: violet;
+  padding: 10px 20px 10px 20px;
+  color: #4f5559;
+}
+
+.main .conversation .chat .msg span {
+  color: #229afe;
+  font-weight: 600;
+}
+
+.main .conversation .chat .sender {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #dcf0ff;
+}
+
+.main .conversation .chat .sender span {
+  display: none;
+}
+
+.main .conversation .chat .receiver {
+  background-color: #f6f6f7;
+}
+
+.main .conversation .chat .connect {
+  background-color: #9aff85;
+}
+
+.main .conversation .chat .disconnect {
+  background-color: #ff9393;
+}
+
+.main .conversation .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  background-color: #f6f6f7;
+}
+
+.main .conversation .message input {
+  line-height: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1em;
+  color: #a0a0a0;
+  padding-left: 10px;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+.main .conversation .message button {
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  cursor: pointer;
+}
+
+.main .conversation .message button i {
+  color: #0689f7;
+  font-size: 1.7em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f7;
+  width: 500px;
+  height: 50px;
+  -webkit-box-shadow: 0px 0px 60px 0px #a3a3a3;
+          box-shadow: 0px 0px 60px 0px #a3a3a3;
+}
+
+.container .login input {
+  line-height: 50px;
+  border: none;
+  background-color: #f6f6f7;
+  font-size: 1.5em;
+  color: #a0a0a0;
+  padding-left: 5px;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+.container .login button {
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  cursor: pointer;
+}
+
+.container .login button i {
+  font-size: 1.7em;
+}
+/*# sourceMappingURL=main.css.map */

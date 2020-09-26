@@ -21,6 +21,7 @@ socket.on("connect", () => {
   socket.emit("connection_message", { username });
 });
 
+
 socket.on("connect_message", (data) => {
   chatContainer.innerHTML += `<div class="msg connect">
     <p>

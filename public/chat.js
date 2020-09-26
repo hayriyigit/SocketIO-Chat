@@ -21,7 +21,6 @@ socket.on("connect", () => {
   socket.emit("connection_message", { username });
 });
 
-
 socket.on("connect_message", (data) => {
   chatContainer.innerHTML += `<div class="msg connect">
     <p>
@@ -45,23 +44,6 @@ socket.on("message", (data) => {
     </p>
   </div>`;
   }
-  console.log(msg);
-});
 
-{
-  /* <div class="msg sender">
-              <span>Hayri</span>
-              <p>Hi guys, what'sup?</p>
-            </div>
-            <div class="msg receiver">
-              <span>Ali Firat</span>
-              <p>
-                All alright, nothing new, would you like to have some cups of
-                wine this friday?
-              </p>
-            </div>
-            <div class="msg sender">
-              <span>Hayri</span>
-              <p>Tabi ki hayir amk sarapcisi</p>
-            </div> */
-}
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+});

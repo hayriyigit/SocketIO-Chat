@@ -3,7 +3,7 @@ const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 const path = require("path");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const publicPath = path.join(__dirname, "public");
 
